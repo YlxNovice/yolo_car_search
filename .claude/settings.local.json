@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python -m pip install \"numpy<2\" 2>&1)",
+      "WebFetch(domain:chatgpt.com)"
+    ]
+  }
+}
