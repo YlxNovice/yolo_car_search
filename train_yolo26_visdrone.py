@@ -4,7 +4,7 @@ from ultralytics import YOLO
 
 if __name__ == '__main__':
     # 从模型配置路径自动提取名称
-    model_cfg = 'ultralytics/cfg/models/26/yolo26-p2-dysample.yaml'
+    model_cfg = 'ultralytics/cfg/models/26/yolo26-p2-ema.yaml'
     model_name = os.path.splitext(os.path.basename(model_cfg))[0]  # yolo26-p2 -> yolo26_visdrone_p2
 
     # 加载YOLO26模型（使用配置文件创建模型）
@@ -46,6 +46,7 @@ if __name__ == '__main__':
         'dnn': False,  # 使用DNN后端
         'plots': True,  # 生成训练过程的图表
     }  # 类别过滤由配置文件处理
+
 
     # 开始训练
     print("开始训练YOLO26模型...")

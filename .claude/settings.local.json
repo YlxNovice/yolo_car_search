@@ -2,7 +2,41 @@
   "permissions": {
     "allow": [
       "PowerShell(python -m pip install \"numpy<2\" 2>&1)",
-      "WebFetch(domain:chatgpt.com)"
+      "WebFetch(domain:chatgpt.com)",
+      "Bash(grep -v \":0$\")",
+      "Bash(awk -F: '{sum+=$NF} END {print sum}')",
+      "Bash(python *)",
+      "Bash(python3 *)",
+      "Bash(py *)",
+      "Read(//usr/**)",
+      "Read(//c/Users/29666/AppData/Local/Programs/**)",
+      "Bash(cmd.exe /c \"where python\")",
+      "Bash(cmd.exe *)",
+      "Read(//c/Users/29666/anaconda3/**)",
+      "Read(//c/Users/29666/miniconda3/**)",
+      "Read(//c/Users/29666/AppData/Local/miniconda3/**)",
+      "Read(//c/Users/29666/**)",
+      "Read(//c//**)",
+      "Bash(/c/Users/29666/PyCharmMiscProject/.venv/Scripts/python.exe *)",
+      "Bash(/d/Anaconda/envs/yolo/python.exe *)",
+      "Bash(/d/Anaconda/envs/ylx/python.exe -c \"import cv2; import numpy; import tqdm; print\\('cv2 OK'\\)\")",
+      "Bash(/d/Anaconda/envs/yolo/bin/python -c \"import cv2; import numpy; import tqdm; print\\('cv2 OK'\\)\")",
+      "Bash(/d/Anaconda/python.exe -c \"import cv2; import numpy; import tqdm; print\\('cv2 OK'\\)\")",
+      "Bash(/d/Anaconda/envs/ylx/python.exe *)",
+      "Bash(conda info *)",
+      "Bash(/d/Anaconda/Scripts/conda.exe env *)",
+      "Read(//d/Anaconda/envs/yolo/**)",
+      "Read(//d/Anaconda/envs/ylx/**)",
+      "WebSearch",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:cloud.tencent.com)",
+      "Bash(ls /c/Python*)",
+      "Bash(ls /c/Program*/Python*)",
+      "Bash(/d/python/python.exe *)",
+      "Bash(/d/Anaconda/python.exe *)",
+      "Read(//mnt/d/**)",
+      "Bash(pip list *)",
+      "Bash(pip install *)"
     ]
   }
 }

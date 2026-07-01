@@ -18,6 +18,8 @@ Examples:
 """
 
 from .dysample import DySample
+from .ema import EMA
+from .scsa import SCSA
 from .block import (
     C1,
     C2,
@@ -61,6 +63,7 @@ from .block import (
     SCDown,
     TorchVision,
 )
+from .spdconv import SPDConv
 from .conv import (
     CBAM,
     ChannelAttention,
@@ -118,6 +121,7 @@ __all__ = (
     "CIB",
     "DFL",
     "ELAN1",
+    "EMA",
     "MLP",
     "OBB",
     "OBB26",
@@ -177,6 +181,8 @@ __all__ = (
     "RepVGGDW",
     "ResNetLayer",
     "SCDown",
+    "SCSA",
+    "SPDConv",
     "Segment",
     "Segment26",
     "SpatialAttention",

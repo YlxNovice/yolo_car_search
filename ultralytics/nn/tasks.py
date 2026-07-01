@@ -37,6 +37,8 @@ from ultralytics.nn.modules import (
     C3Ghost,
     C3k2,
     C3x,
+    EMA,
+    SCSA,
     CBFuse,
     CBLinear,
     Classify,
@@ -65,6 +67,7 @@ from ultralytics.nn.modules import (
     ResNetLayer,
     RTDETRDecoder,
     SCDown,
+    SPDConv,
     Segment,
     Segment26,
     TorchVision,
@@ -1609,6 +1612,9 @@ def parse_model(d, ch, verbose=True):
             SCDown,
             C2fCIB,
             A2C2f,
+            EMA,
+            SCSA,
+            SPDConv,
         }
     )
     repeat_modules = frozenset(  # modules with 'repeat' arguments
